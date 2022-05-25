@@ -23,6 +23,7 @@ Big HN
 
 * Description: Increases font size and spacing on the Hacker News website.
 * Install: [bighn.user.js]
+* Source: [bighn.user.js](./bighn.user.js)
 
 
 Dark HN
@@ -30,6 +31,7 @@ Dark HN
 
 * Description: Shows Hacker News using a dark color theme.
 * Install: [darkhn.user.js]
+* Source: [darkhn.user.js](./darkhn.user.js)
 
 
 Darken
@@ -40,6 +42,7 @@ Darken
   or type <kbd>ctrl</kbd> four times quickly to activate the inverted
   color scheme. Repeat to deactivate it.
 * Install: [darken.user.js]
+* Source: [darken.user.js](./darken.user.js)
 
 
 [bighn.user.js]: https://github.com/susam/userscripts/raw/main/bighn.user.js
