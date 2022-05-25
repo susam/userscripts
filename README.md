@@ -45,3 +45,16 @@ Darken
 [bighn.user.js]: https://github.com/susam/userscripts/raw/main/bighn.user.js
 [darkhn.user.js]: https://github.com/susam/userscripts/raw/main/darkhn.user.js
 [darken.user.js]: https://github.com/susam/userscripts/raw/main/darken.user.js
+
+
+License
+-------
+
+This is free and open source software. You can use, copy, modify,
+merge, publish, distribute, sublicense, and/or sell copies of it,
+under the terms of the MIT License. See [LICENSE.md][L] for details.
+
+This software is provided "AS IS", WITHOUT WARRANTY OF ANY KIND,
+express or implied. See [LICENSE.md][L] for details.
+
+[L]: LICENSE.md
