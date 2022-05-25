@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name Big HN
+// @name Susam's Big HN
 // @match https://news.ycombinator.com/*
 // ==/UserScript==
 const css = window.document.createElement('style')
