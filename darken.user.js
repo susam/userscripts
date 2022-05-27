@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name Susam's Darken
+// @name Darken
 // @description Darken page with quadruple-click or quadruple-typing of 'ctrl'.
 // @version 0.1.0
 // @author Susam Pal

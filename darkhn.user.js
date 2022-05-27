@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name Susam's Dark HN
+// @name Dark HN
 // @match https://news.ycombinator.com/*
 // ==/UserScript==
 window.document.body.style.background = '#111'

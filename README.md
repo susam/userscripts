@@ -1,5 +1,5 @@
-Susam's Userscripts
-===================
+My Userscripts
+==============
 
 This repository contains some of my userscripts that I use while
 browsing the web. These userscripts are tiny JavaScript snippets that
