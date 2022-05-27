@@ -45,7 +45,7 @@ Darken
   color scheme. Repeat to deactivate it.
 * Install: [darken.user.js]
 * Source: [darken.user.js](./darken.user.js)
-* Screenshot: https://i.imgur.com/IKJTQ6I.png
+* Screenshot: https://i.imgur.com/eIppMAS.png
 
 
 [bighn.user.js]: https://github.com/susam/userscripts/raw/main/bighn.user.js
