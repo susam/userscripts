@@ -5,7 +5,7 @@ This repository contains some of my userscripts that I use while
 browsing the web. These userscripts are tiny JavaScript snippets that
 can be installed and run with a userscript manager such as
 Greasemonkey, Violentmonkey, or Tampermonkey. These userscript
-managers are available as web browser extensions. One of them should
+managers are available as web browser extensions. One of them needs to
 be installed on the web browser as a prerequisite before these
 userscripts can be used.
 
@@ -21,7 +21,7 @@ Contents
 Big HN
 ------
 
-* Description: Increases font size and spacing on the Hacker News website.
+* Description: Increase font size and spacing on the Hacker News website.
 * Install: [bighn.user.js]
 * Source: [bighn.user.js](./bighn.user.js)
 * Screenshot: https://i.imgur.com/biiFVwg.png
@@ -30,7 +30,7 @@ Big HN
 Dark HN
 -------
 
-* Description: Shows Hacker News using a dark color theme.
+* Description: Show Hacker News using a dark color theme.
 * Install: [darkhn.user.js]
 * Source: [darkhn.user.js](./darkhn.user.js)
 * Screenshot: https://i.imgur.com/lndB2H8.png
