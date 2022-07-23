@@ -15,6 +15,7 @@ Contents
 
 * [Big HN](#big-hn)
 * [Dark HN](#dark-hn)
+* [No HN](#no-hn)
 * [Darken](#darken)
 
 
@@ -23,7 +24,7 @@ Big HN
 
 * Description: Increase font size and spacing on the Hacker News website.
 * Install: [bighn.user.js]
-* Source: [bighn.user.js](./bighn.user.js)
+* Source: [bighn.user.js](bighn.user.js)
 * Screenshot: https://i.imgur.com/biiFVwg.png
 
 
@@ -32,8 +33,17 @@ Dark HN
 
 * Description: Show Hacker News using a dark color theme.
 * Install: [darkhn.user.js]
-* Source: [darkhn.user.js](./darkhn.user.js)
+* Source: [darkhn.user.js](darkhn.user.js)
 * Screenshot: https://i.imgur.com/lndB2H8.png
+
+
+No HN
+-----
+
+* Description: Replaces Hacker News with a blank page.
+* Install: [nohn.user.js]
+* Source: [nohn.user.js](nohn.user.js)
+* Screenshot: https://i.imgur.com/0rofhqH.png
 
 
 Darken
@@ -44,12 +54,13 @@ Darken
   or type <kbd>ctrl</kbd> four times quickly to activate the inverted
   color scheme. Repeat to deactivate it.
 * Install: [darken.user.js]
-* Source: [darken.user.js](./darken.user.js)
+* Source: [darken.user.js](darken.user.js)
 * Screenshot: https://i.imgur.com/eIppMAS.png
 
 
 [bighn.user.js]: https://github.com/susam/userscripts/raw/main/bighn.user.js
 [darkhn.user.js]: https://github.com/susam/userscripts/raw/main/darkhn.user.js
+[nohn.user.js]: https://github.com/susam/userscripts/raw/main/nohn.user.js
 [darken.user.js]: https://github.com/susam/userscripts/raw/main/darken.user.js
 
 
