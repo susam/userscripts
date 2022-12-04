@@ -50,9 +50,8 @@ Darken
 ------
 
 * Description: Invert the color scheme of a web page to darken it on a
-  best effort basis. Click four times quickly anywhere on a web page
-  or type <kbd>ctrl</kbd> four times quickly to activate the inverted
-  color scheme. Repeat to deactivate it.
+  best effort basis. Type <kbd>ctrl</kbd> four times quickly to
+  activate the inverted color scheme. Repeat to deactivate it.
 * Install: [darken.user.js]
 * Source: [darken.user.js](darken.user.js)
 * Screenshot: https://i.imgur.com/eIppMAS.png

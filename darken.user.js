@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name Darken
-// @description Darken page with quadruple-click or quadruple-typing of 'ctrl'.
-// @version 0.1.0
+// @description Darken page by typing 'ctrl' four times quickly!
+// @version 0.2.0
 // @author Susam Pal
 // @match *://*/*
 // ==/UserScript==
@@ -73,5 +73,4 @@ function listenToKeyTrigger (e) {
 }
 
 autoEnableDark()
-window.addEventListener('click', listenToTrigger)
 window.addEventListener('keydown', listenToKeyTrigger)
