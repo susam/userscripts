@@ -4,7 +4,7 @@
 // ==/UserScript==
 const css = window.document.createElement('style')
 css.innerText = `
-  body, td, a, span {
+  body, td, a, span, .comment {
     font-size: medium !important;
     line-height: 1.5em !important;
   }
