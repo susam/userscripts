@@ -57,10 +57,10 @@ Darken
 * Screenshot: https://i.imgur.com/eIppMAS.png
 
 
-[bighn.user.js]: https://github.com/susam/userscripts/raw/main/bighn.user.js
-[darkhn.user.js]: https://github.com/susam/userscripts/raw/main/darkhn.user.js
-[nohn.user.js]: https://github.com/susam/userscripts/raw/main/nohn.user.js
-[darken.user.js]: https://github.com/susam/userscripts/raw/main/darken.user.js
+[bighn.user.js]: https://github.com/susam/userscript/raw/main/bighn.user.js
+[darkhn.user.js]: https://github.com/susam/userscript/raw/main/darkhn.user.js
+[nohn.user.js]: https://github.com/susam/userscript/raw/main/nohn.user.js
+[darken.user.js]: https://github.com/susam/userscript/raw/main/darken.user.js
 
 
 License
