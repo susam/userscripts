@@ -1,6 +1,8 @@
 // ==UserScript==
-// @name No HN
-// @match https://news.ycombinator.com/*
+// @name        No HN
+// @version     2026.02.19
+// @description Replace HN with blank page
+// @author      Susam Pal
+// @match       https://news.ycombinator.com/*
 // ==/UserScript==
-window.document.body.innerHTML = ''
-
+window.document.body.textContent = ''

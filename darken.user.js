@@ -1,76 +1,77 @@
 // ==UserScript==
-// @name Darken
-// @description Darken page by typing 'ctrl' four times quickly!
-// @version 0.2.0
-// @author Susam Pal
-// @match *://*/*
+// @name        Darken
+// @version     2026.02.19
+// @description Darken page by typing 'ctrl' four times quickly
+// @author      Susam Pal
+// @match       *://*/*
 // ==/UserScript==
+(function () {
+  let darkEnabled = false
+  let lastTriggerTime = 0
+  let triggerCount = 0
+  let logEnabled = false
 
-let darkEnabled = false
-let lastTriggerTime = 0
-let triggerCount = 0
-let logEnabled = false
-
-function log () {
-  if (logEnabled) {
-    console.log.apply(null, arguments)
+  function log () {
+    if (logEnabled) {
+      console.log.apply(null, arguments)
+    }
   }
-}
 
-function autoEnableDark () {
-  if (window.localStorage.getItem('darken') === 'yes') {
-    log('Darkening requested; enabling dark mode ...')
-    enableDark()
+  function autoEnableDark () {
+    if (window.localStorage.getItem('darken') === 'yes') {
+      log('Darkening requested; enabling dark mode ...')
+      enableDark()
+    }
   }
-}
 
-function enableDark () {
-  document.body.style.background = '#111'
-  document.body.style.filter = 'invert(1) hue-rotate(180deg)'
-  for (let img of document.getElementsByTagName('img')) {
-    img.style.filter = 'invert(1) hue-rotate(180deg)'
+  function enableDark () {
+    document.body.style.background = '#111'
+    document.body.style.filter = 'invert(1) hue-rotate(180deg)'
+    for (let img of document.getElementsByTagName('img')) {
+      img.style.filter = 'invert(1) hue-rotate(180deg)'
+    }
+    darkEnabled = true
+    localStorage.setItem('darken', 'yes')
+    log('Enabled dark mode')
   }
-  darkEnabled = true
-  localStorage.setItem('darken', 'yes')
-  log('Enabled dark mode')
-}
 
-function disableDark () {
-  document.body.style.background = ''
-  document.body.style.filter = ''
-  for (let img of document.getElementsByTagName('img')) {
-    img.style.filter = ''
+  function disableDark () {
+    document.body.style.background = ''
+    document.body.style.filter = ''
+    for (let img of document.getElementsByTagName('img')) {
+      img.style.filter = ''
+    }
+    darkEnabled = false
+    localStorage.removeItem('darken')
+    log('Disabled dark mode')
   }
-  darkEnabled = false
-  localStorage.removeItem('darken')
-  log('Disabled dark mode')
-}
 
-function toggleDark () {
-  darkEnabled ? disableDark() : enableDark()
-}
-
-function listenToTrigger(e) {
-  log('Previous trigger count:', triggerCount)
-  let currentTime = new Date().getTime()
-  if (currentTime - lastTriggerTime <= 250) {
-    triggerCount += 1
-  } else {
-    triggerCount = 1
+  function toggleDark () {
+    darkEnabled ? disableDark() : enableDark()
   }
-  log('Updated trigger count:', triggerCount)
-  lastTriggerTime = currentTime
-  if (triggerCount == 4) {
-    log('Toggling dark mode ...')
-    toggleDark()
-  }
-}
 
-function listenToKeyTrigger (e) {
-  if (e.key === 'Control') {
-    listenToTrigger()
+  function listenToTrigger(e) {
+    log('Previous trigger count:', triggerCount)
+    let currentTime = new Date().getTime()
+    if (currentTime - lastTriggerTime <= 250) {
+      triggerCount += 1
+    } else {
+      triggerCount = 1
+    }
+    log('Updated trigger count:', triggerCount)
+    lastTriggerTime = currentTime
+    if (triggerCount == 4) {
+      log('Toggling dark mode ...')
+      toggleDark()
+    }
   }
-}
 
-autoEnableDark()
-window.addEventListener('keydown', listenToKeyTrigger)
+  function listenToKeyTrigger (e) {
+    if (e.key === 'Control') {
+      listenToTrigger()
+    }
+  }
+
+  autoEnableDark()
+  window.addEventListener('keydown', listenToKeyTrigger)
+})()
