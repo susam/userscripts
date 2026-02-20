@@ -23,11 +23,12 @@ Increase font size and spacing on HN.
 
 [Install Script][bighn-raw]
 
-[View Source](bighn.user.js)
+[View Source][bighn-src]
 
 [![Big HN][bighn-img]][bighn-img]
 
-[bighn-raw]: https://github.com/susam/userscript/raw/main/bighn.user.js
+[bighn-src]: js/bighn.user.js
+[bighn-raw]: https://github.com/susam/userscript/raw/main/js/bighn.user.js
 [bighn-img]: https://susam.github.io/blob/img/userscripts/bighn.png
 
 
@@ -37,11 +38,12 @@ Darken page by typing 'ctrl' four times quickly.
 
 [Install Script][darken-raw]
 
-[View Source](darken.user.js)
+[View Source][darken-src]
 
 [![Darken][darken-img]][darken-img]
 
-[darken-raw]: https://github.com/susam/userscript/raw/main/darken.user.js
+[darken-src]: js/darken.user.js
+[darken-raw]: https://github.com/susam/userscript/raw/main/js/darken.user.js
 [darken-img]: https://susam.github.io/blob/img/userscripts/darken.png
 
 
@@ -51,11 +53,12 @@ Dark colour scheme for HN.
 
 [Install Script][darkhn-raw]
 
-[View Source](darkhn.user.js)
+[View Source][darkhn-src]
 
 [![Dark HN][darkhn-img]][darkhn-img]
 
-[darkhn-raw]: https://github.com/susam/userscript/raw/main/darkhn.user.js
+[darkhn-src]: js/darkhn.user.js
+[darkhn-raw]: https://github.com/susam/userscript/raw/main/js/darkhn.user.js
 [darkhn-img]: https://susam.github.io/blob/img/userscripts/darkhn.png
 
 
@@ -65,11 +68,12 @@ Replace HN with blank page.
 
 [Install Script][nohn-raw]
 
-[View Source](nohn.user.js)
+[View Source][nohn-src]
 
 [![No HN][nohn-img]][nohn-img]
 
-[nohn-raw]: https://github.com/susam/userscript/raw/main/nohn.user.js
+[nohn-src]: js/nohn.user.js
+[nohn-raw]: https://github.com/susam/userscript/raw/main/js/nohn.user.js
 [nohn-img]: https://susam.github.io/blob/img/userscripts/nohn.png
 
 
@@ -77,9 +81,9 @@ Replace HN with blank page.
 
 This is free and open source software.  You can use, copy, modify,
 merge, publish, distribute, sublicence and/or sell copies of it, under
-the terms of the MIT Licence.  See [LICENSE.md][L] for details.
+the terms of the MIT Licence.  See [LICENCE.md][L] for details.
 
 This software is provided "AS IS", WITHOUT WARRANTY OF ANY KIND,
-express or implied.  See [LICENSE.md][L] for details.
+express or implied.  See [LICENCE.md][L] for details.
 
-[L]: LICENSE.md
+[L]: LICENCE.md
