@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name        Dark HN
 // @version     2026.02.19
-// @description Dark colour scheme for HN
+// @description Dark colour scheme for HN.
 // @author      Susam Pal
 // @match       https://news.ycombinator.com/*
 // ==/UserScript==

@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name        Big HN
 // @version     2026.02.19
-// @description Increase font size and spacing on HN
+// @description Increase font size and spacing on HN.
 // @author      Susam Pal
 // @match       https://news.ycombinator.com/*
 // ==/UserScript==

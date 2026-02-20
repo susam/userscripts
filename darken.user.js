@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name        Darken
 // @version     2026.02.19
-// @description Darken page by typing 'ctrl' four times quickly
+// @description Darken page by typing 'ctrl' four times quickly.
 // @author      Susam Pal
 // @match       *://*/*
 // ==/UserScript==

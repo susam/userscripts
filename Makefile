@@ -9,9 +9,11 @@ readme:
 	  echo "* [$$name](#$$frag)" >> contents.tmp; \
 	  echo "## $$name" >> body.tmp; \
 	  echo >> body.tmp; \
-	  echo "* Description: $$desc" >> body.tmp; \
-	  echo "* Install: [$$f][$$slug-raw]" >> body.tmp; \
-	  echo "* Source: [$$f]($$f)" >> body.tmp; \
+	  echo "$$desc" >> body.tmp; \
+	  echo >> body.tmp; \
+	  echo "[Install Script][$$slug-raw]" >> body.tmp; \
+	  echo >> body.tmp; \
+	  echo "[View Source]($$f)" >> body.tmp; \
 	  echo >> body.tmp; \
 	  echo "[![$$name][$$slug-img]][$$slug-img]" >> body.tmp; \
 	  echo >> body.tmp; \
