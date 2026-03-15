@@ -8,6 +8,10 @@ Greasemonkey or Tampermonkey.  These userscript managers are available
 as web browser extensions.  One of them needs to be installed on the
 web browser as a prerequisite before these userscripts can be used.
 
+**NOTE:** The former **Big HN** and **Dark HN** userscripts have now
+been consolidated into a single userscript called HN Skins which can
+be found at [github.com/susam/hnskins](https://github.com/susam/hnskins).
+
 
 ## Contents
 
