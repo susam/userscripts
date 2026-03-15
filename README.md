@@ -15,6 +15,7 @@ web browser as a prerequisite before these userscripts can be used.
 * [Darken](#darken)
 * [Dark HN](#dark-hn)
 * [No HN](#no-hn)
+* [YTX](#ytx)
 
 
 ## Big HN
@@ -75,6 +76,21 @@ Replace HN with blank page.
 [nohn-src]: js/nohn.user.js
 [nohn-raw]: https://github.com/susam/userscript/raw/main/js/nohn.user.js
 [nohn-img]: https://susam.github.io/blob/img/userscripts/nohn.png
+
+
+## YTX
+
+Hide recommendation sidebar and shorts on YouTube.
+
+[Install Script][ytx-raw]
+
+[View Source][ytx-src]
+
+[![YTX][ytx-img]][ytx-img]
+
+[ytx-src]: js/ytx.user.js
+[ytx-raw]: https://github.com/susam/userscript/raw/main/js/ytx.user.js
+[ytx-img]: https://susam.github.io/blob/img/userscripts/ytx.png
 
 
 ## Licence
