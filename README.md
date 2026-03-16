@@ -52,7 +52,7 @@ Replace HN with blank page.
 
 ## YTX
 
-Hide recommendation sidebar and shorts on YouTube.
+Hide YT recommendations and shorts
 
 [Install Script][ytx-raw]
 

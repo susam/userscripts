@@ -1,35 +1,46 @@
 // ==UserScript==
 // @name        YTX
-// @version     2026.02.19
-// @description Hide recommendation sidebar and shorts on YouTube.
+// @version     2026.03.16
+// @description Hide YT recommendations and shorts
 // @author      Susam Pal
 // @match       https://www.youtube.com/*
 // ==/UserScript==
 (function () {
   const style = document.createElement('style')
+  document.head.appendChild(style)
   style.textContent = `
-    ytd-rich-shelf-renderer { display: none !important }
-    ytm-shorts-lockup-view-model { display: none !important }
-    yt-lockup-view-model { display: none !important }
-
-    /* Grid of blank panels displays when page is loading */
-    ytd-ghost-grid-renderer { display: none !important; }
-
-    /* Topics panel at the top of home page */
+    /* Home: Topics panel at the top. */
     ytd-feed-filter-chip-bar-renderer { display: none !important }
 
-    /* 'Explore more topics' panel in the home page */
+    /* Home: Playables, Top news, Explore more topics. */
+    ytd-rich-shelf-renderer { display: none !important}
+
+    /* Home: Video container. */
+    yt-lockup-view-model { display: none !important }
+
+    /* Home: 'Explore more topics' header. */
     ytd-chips-shelf-with-video-shelf-renderer { display: none !important }
 
-    /* Recommendation sidebar on video page */
+    /* Video page: Recommendation sidebar. */
     #secondary { display: none !important }
+
+    /* Shorts: Giant container of shorts. */
+    ytd-shorts { display: none !important }
+
+    /* Search: Shorts panels with shorts recommendations */
+    grid-shelf-view-model { display: none !important }
+
+    /* Search: 'People also search for' panel */
+    ytd-horizontal-card-list-renderer { display: none !important }
   `
-  document.head.appendChild(style)
-  function clearShorts () {
-    if (window.location.pathname.startsWith('/shorts')) {
-      document.body.textContent = ''
+
+  /* Pause shorts videos. */
+  function watcher () {
+    for (const v of document.querySelectorAll('ytd-shorts video')) {
+      v.pause()
     }
+    setTimeout(watcher, 1000)
   }
-  window.addEventListener('yt-navigate-finish', clearShorts)
-  clearShorts()
+
+  watcher()
 })()
