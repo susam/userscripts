@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name        YTX
-// @version     2026.03.16
-// @description Hide YT recommendations and shorts
+// @version     2026.03.17
+// @description Hide recommendations and shorts
 // @author      Susam Pal
 // @match       https://www.youtube.com/*
 // ==/UserScript==
@@ -13,13 +13,10 @@
     ytd-feed-filter-chip-bar-renderer { display: none !important }
 
     /* Home: Playables, Top news, Explore more topics. */
-    ytd-rich-shelf-renderer { display: none !important}
+    ytd-rich-section-renderer { display: none !important }
 
     /* Home: Video container. */
     yt-lockup-view-model { display: none !important }
-
-    /* Home: 'Explore more topics' header. */
-    ytd-chips-shelf-with-video-shelf-renderer { display: none !important }
 
     /* Video page: Recommendation sidebar. */
     #secondary { display: none !important }
@@ -33,14 +30,11 @@
     /* Search: 'People also search for' panel */
     ytd-horizontal-card-list-renderer { display: none !important }
   `
-
-  /* Pause shorts videos. */
-  function watcher () {
+  function pause () {
     for (const v of document.querySelectorAll('ytd-shorts video')) {
       v.pause()
     }
-    setTimeout(watcher, 1000)
+    setTimeout(pause, 1000)
   }
-
-  watcher()
+  pause()
 })()
