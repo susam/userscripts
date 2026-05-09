@@ -1,3 +1,5 @@
+NAME = userscripts
+
 readme:
 	rm -f contents.tmp body.tmp README.tmp
 	ls -1 js/*.js | sort | while read -r f; do \
@@ -33,3 +35,13 @@ readme:
 	sed -n '/## Licence/,$$p' README.md >> README.tmp
 	mv README.tmp README.md
 	rm -f *.tmp
+
+cc:
+	git remote remove cc || :
+	git remote add cc git@codeberg.org:susam/$(NAME).git
+	git remote set-url cc --add git@github.com:susam/$(NAME).git
+	git remote remove origin || :
+	git remote add origin "$$(git remote get-url cc)"
+	git remote -v
+	git push -u origin main
+	git push cc main
